@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+
+/* =========================================================
+   TAILWIND V4 THEME
+   ========================================================= */
+
+@theme {
+
+  /* COLORS */
+  --color-on-primary-fixed-variant: #683c1a;
+  --color-on-background: #f6ddd4;
+  --color-on-surface-variant: #d6c3b8;
+  --color-on-tertiary-fixed-variant: #673d15;
+  --color-inverse-surface: #f6ddd4;
+  --color-surface-container: #2a1d17;
+  --color-on-error: #690005;
+  --color-primary-container: #c58b62;
+  --color-surface-container-highest: #41312b;
+  --color-on-tertiary-fixed: #2e1500;
+  --color-on-tertiary-container: #4c2701;
+  --color-on-secondary-fixed: #301400;
+  --color-on-primary-container: #4c2605;
+  --color-on-primary: #4d2605;
+  --color-primary-fixed: #ffdcc6;
+  --color-on-primary-fixed: #301400;
+  --color-background: #1d100b;
+  --color-surface-container-high: #352721;
+  --color-inverse-on-surface: #3c2d27;
+  --color-primary-fixed-dim: #f9b98c;
+  --color-tertiary: #f8ba87;
+  --color-surface-bright: #453630;
+  --color-surface-variant: #41312b;
+  --color-tertiary-container: #c48c5d;
+  --color-inverse-primary: #84532f;
+  --color-error-container: #93000a;
+  --color-tertiary-fixed: #ffdcc2;
+  --color-error: #ffb4ab;
+  --color-on-surface: #f6ddd4;
+  --color-on-error-container: #ffdad6;
+  --color-outline: #9e8d83;
+  --color-on-secondary-container: #e5a87e;
+  --color-on-secondary: #4c2707;
+  --color-secondary-fixed-dim: #f8b98e;
+  --color-surface: #1d100b;
+  --color-secondary: #f8b98e;
+  --color-secondary-fixed: #ffdcc6;
+  --color-on-tertiary: #4c2701;
+  --color-on-secondary-fixed-variant: #673c1b;
+  --color-surface-container-lowest: #170b07;
+  --color-outline-variant: #51443c;
+  --color-surface-tint: #f9b98c;
+  --color-tertiary-fixed-dim: #f8ba87;
+  --color-primary: #f9b98c;
+  --color-surface-dim: #1d100b;
+  --color-surface-container-low: #261913;
+  --color-secondary-container: #673c1b;
+
+
+  /* BORDER RADIUS */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+
+  /* SPACING */
+  --spacing-margin: 4rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.75rem;
+  --spacing-space-xl: 3rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-space-sm: 0.5rem;
+
+
+  /* FONT FAMILY */
+  --font-headline-sm: "Bodoni Moda", serif;
+  --font-display-xl-mobile: "Bodoni Moda", serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-subheading-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-editorial-numeral: "Bodoni Moda", serif;
+  --font-headline-lg: "Bodoni Moda", serif;
+  --font-headline-md: "Bodoni Moda", serif;
+  --font-display-xl: "Bodoni Moda", serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Bodoni Moda", serif;
+
+
+  /* FONT SIZE */
+
+  --text-headline-sm: 1.5rem;
+  --text-headline-sm--line-height: 2rem;
+  --text-headline-sm--letter-spacing: 0em;
+  --text-headline-sm--font-weight: 500;
+
+  --text-display-xl-mobile: 3rem;
+  --text-display-xl-mobile--line-height: 3.5rem;
+  --text-display-xl-mobile--letter-spacing: -0.02em;
+  --text-display-xl-mobile--font-weight: 400;
+
+  --text-label-lg: 0.875rem;
+  --text-label-lg--line-height: 1.25rem;
+  --text-label-lg--letter-spacing: 0.08em;
+  --text-label-lg--font-weight: 600;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.5rem;
+  --text-body-sm--font-weight: 400;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.85rem;
+  --text-body-lg--font-weight: 400;
+
+  --text-subheading-lg: 1.25rem;
+  --text-subheading-lg--line-height: 1.875rem;
+  --text-subheading-lg--letter-spacing: 0.01em;
+  --text-subheading-lg--font-weight: 500;
+
+  --text-label-md: 0.75rem;
+  --text-label-md--line-height: 1rem;
+  --text-label-md--letter-spacing: 0.12em;
+  --text-label-md--font-weight: 600;
+
+  --text-editorial-numeral: 1.25rem;
+  --text-editorial-numeral--line-height: 1.25rem;
+  --text-editorial-numeral--letter-spacing: 0.05em;
+  --text-editorial-numeral--font-weight: 400;
+
+  --text-headline-lg: 3.5rem;
+  --text-headline-lg--line-height: 4rem;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 400;
+
+  --text-headline-md: 2.25rem;
+  --text-headline-md--line-height: 2.75rem;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 500;
+
+  --text-display-xl: 5.5rem;
+  --text-display-xl--line-height: 6rem;
+  --text-display-xl--letter-spacing: -0.03em;
+  --text-display-xl--font-weight: 400;
+
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.65rem;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-lg-mobile: 2.25rem;
+  --text-headline-lg-mobile--line-height: 2.75rem;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 400;
+}
+
+
+/* =========================================================
+   NORMAL CSS
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  scroll-padding-top: 5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+
+  background: #1d100b;
+  color: #f6ddd4;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* SELECTION */
+
+::selection {
+  background: #c58b62;
+  color: #4c2605;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #170b07;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #673c1b;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c58b62;
+}
+
+
+/* NO SCROLLBAR */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* IMAGES */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* LINKS / BUTTONS */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* FOCUS */
+
+:focus-visible {
+  outline: 1px solid #f9b98c;
+  outline-offset: 3px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
+
+a,
+button:not(:disabled),
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Responsive safety: prevent decorative glows and wide cards from causing
+   accidental horizontal scrolling on phones while preserving page scrolling. */
+@media (max-width: 640px) {
+  body {
+    overflow-x: clip;
+  }
+
+  section,
+  main,
+  footer {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  h1 {
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* Warm editorial motion system: subtle, GPU-friendly, and accessible. */
+:root { --motion-ease: cubic-bezier(.22, 1, .36, 1); }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 5.5rem; }
+
+/* Reveal elements only when they enter the viewport. */
+.js-motion [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity .7s var(--motion-ease), transform .7s var(--motion-ease);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.js-motion [data-reveal].is-visible { opacity: 1; transform: translate3d(0, 0, 0); }
+[data-reveal="left"] { transform: translate3d(-24px, 0, 0); }
+[data-reveal="right"] { transform: translate3d(24px, 0, 0); }
+[data-reveal="scale"] { transform: translate3d(0, 10px, 0) scale(.975); }
+
+/* Cards and controls lift gently in the site's copper palette. */
+main article, main [data-motion-card] {
+  transition: border-color .3s ease, box-shadow .35s ease, transform .35s var(--motion-ease), background-color .3s ease;
+}
+main article:hover, main [data-motion-card]:hover {
+  border-color: rgb(197 139 98 / .55);
+  box-shadow: 0 16px 45px rgb(0 0 0 / .22), 0 0 24px rgb(197 139 98 / .06);
+}
+header nav a { position: relative; }
+header nav a::after {
+  content: ""; position: absolute; left: 16px; right: 16px; bottom: 5px; height: 1px;
+  background: #f9b98c; transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+}
+header nav a:hover::after, header nav a[aria-current="location"]::after { transform: scaleX(1); }
+header nav a[aria-current="location"] { color: #f9b98c; }
+
+@keyframes copper-breathe { 0%, 100% { box-shadow: 0 0 0 rgb(249 185 140 / 0); } 50% { box-shadow: 0 0 22px rgb(249 185 140 / .12); } }
+[data-ambient] { animation: copper-breathe 5s ease-in-out infinite; }
+
+@media (hover: none), (pointer: coarse) {
+  main article:hover, main [data-motion-card]:hover { transform: none; }
+}
+@media (max-width: 640px) {
+  .js-motion [data-reveal] { transition-duration: .45s; }
+  [data-ambient] { animation: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .js-motion [data-reveal] { opacity: 1; transform: none; }
+}
