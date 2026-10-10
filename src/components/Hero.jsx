@@ -1,5 +1,6 @@
 import { ArrowDown, Download, Code2 } from "lucide-react";
 import shawaizImage from "../assets/images/shahwaiz.png";
+import resume from "../assets/shaz.pdf";
 
 const stats = [
   { value: "0.5+", label: "Years Experience" },
@@ -70,7 +71,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/cv.pdf"
+            href={resume}
             download
             className="group inline-flex items-center gap-2.5 rounded-full border border-[#9e8d83]/30 bg-[#352721]/80 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-[#f6ddd4] transition duration-300 hover:bg-[#41312b]"
           >
