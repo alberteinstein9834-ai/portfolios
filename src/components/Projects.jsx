@@ -37,7 +37,7 @@ const projects = [
     stack: ["HTML", "CSS", "JavaScript"],
     image: "/images/projects/aura.jpg",
     preview: "audio",
-    liveUrl: "https://github.com/shawaiz-irshad/clock-project",
+    liveUrl: "https://shawaiz-irshad.github.io/clock-project/",
   },
   {
     number: "04",
