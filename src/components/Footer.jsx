@@ -71,7 +71,7 @@ const disciplines = [
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/alberteinstein9834-ai/",
+    href: "https://github.com/shawaiz-irshad",
     Icon: GithubIcon,
   },
   {

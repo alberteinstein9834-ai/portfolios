@@ -37,7 +37,7 @@ const projects = [
     stack: ["HTML", "CSS", "JavaScript"],
     image: "/images/projects/aura.jpg",
     preview: "audio",
-    liveUrl: "https://alberteinstein9834-ai.github.io/clock-project/",
+    liveUrl: "https://github.com/shawaiz-irshad/clock-project",
   },
   {
     number: "04",
@@ -304,7 +304,7 @@ function ProjectCard({ project }) {
 </button>
 
           <a
-            href="https://github.com/alberteinstein9834-ai?tab=repositories"
+            href="https://github.com/shawaiz-irshad"
             target="_blank"
             rel="noreferrer"
             aria-label={`GitHub profile (add the repository URL for ${project.title})`}
