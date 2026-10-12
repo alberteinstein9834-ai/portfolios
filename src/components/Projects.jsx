@@ -34,9 +34,9 @@ const projects = [
     title: "Digital & Analog Clock",
     description:
       "A responsive digital clock website built with HTML, CSS, and JavaScript, featuring a toggle function that seamlessly switches between digital and analog clock displays with a clean, user-friendly interface.",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["HTML", "CSS", "Javascript"],
     image: "/images/projects/aura.jpg",
-    preview: "audio",
+    preview: "Audio",
     liveUrl: "https://shawaiz-irshad.github.io/clock-project/",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     title: "New Project coming soon!",
     description:
       "New projects are coming soon! 🚀 Currently working on something exciting — stay tuned.",
-    stack: ["React", "Vite", "Tailwind CSS"],
+    stack: ["ReactJS", "Vite", "Tailwind CSS"],
     image: "/images/projects/vanguard.jpg",
     preview: "protocol",
     liveUrl: "",
