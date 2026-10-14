@@ -1,6 +1,6 @@
 import { ArrowRight, DraftingCompass } from "lucide-react";
 import { Link } from "react-router-dom";
-import shazImage from "../assets/images/overhead.png";
+import shazImage from "../assets/images/overhead.webp";
 
 
 const skills = [

@@ -11,7 +11,7 @@ const projects = [
     description:
       "A modern, fully responsive website built with React.js, Tailwind CSS, and Vite, featuring a clean UI, elegant design, and seamless user experience across desktop, tablet, and mobile devices.",
     stack: ["React", "Tailwind CSS", "Node.js"],
-    image: "../assets/images/nexweb.jpg",
+    
     preview: "dashboard",
     liveUrl: "https://nnexweb.netlify.app",
   },
@@ -23,7 +23,7 @@ const projects = [
     description:
       "A responsive jewellery e-commerce website built with React.js, Tailwind CSS, and Vite, featuring Firebase integration and an admin panel for product management, with an elegant design and seamless shopping experience",
     stack: ["React", "Firebase", "Tailwind CSS"],
-    image: "/images/projects/atelier.jpg",
+    
     preview: "editorial",
     liveUrl: "https://ronish-jewels.netlify.app/",
   },
@@ -34,9 +34,9 @@ const projects = [
     title: "Digital & Analog Clock",
     description:
       "A responsive digital clock website built with HTML, CSS, and JavaScript, featuring a toggle function that seamlessly switches between digital and analog clock displays with a clean, user-friendly interface.",
-    stack: ["HTML", "CSS", "Javascript"],
-    image: "/images/projects/aura.jpg",
-    preview: "Audio",
+    stack: ["HTML", "CSS", "JavaScript"],
+    
+    preview: "clock",
     liveUrl: "https://shawaiz-irshad.github.io/clock-project/",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     description:
       "New projects are coming soon! 🚀 Currently working on something exciting — stay tuned.",
     stack: ["ReactJS", "Vite", "Tailwind CSS"],
-    image: "/images/projects/vanguard.jpg",
+    
     preview: "protocol",
     liveUrl: "",
   },
@@ -59,7 +59,7 @@ const projects = [
     description:
       "New projects are coming soon! 🚀 Currently working on something exciting — stay tuned.",
     stack: ["React", "Vite", "Tailwind CSS"],
-    image: "/images/projects/caelum.jpg",
+    
     preview: "fashion",
     liveUrl: "",
   },
@@ -71,7 +71,7 @@ const projects = [
     description:
       "New projects are coming soon! 🚀 Currently working on something exciting — stay tuned.",
     stack: ["React", "Vite", "Tailwind CSS"],
-    image: "/images/projects/nexus.jpg",
+    
     preview: "nodes",
     liveUrl: "",
   },
@@ -150,7 +150,7 @@ function ProjectArtwork({ project }) {
 )}
 
       {/* Audio preview */}
-      {project.preview === "audio" && (
+      {project.preview === "clock" && (
   <div className="relative z-10 flex flex-col items-center text-center">
     <span className="text-[9px] uppercase tracking-[0.3em] text-[#d6c3b8]">
       Digital & Analog Clock
@@ -236,19 +236,7 @@ function ProjectArtwork({ project }) {
         </div>
       )}
 
-      {/* Optional real project image. It hides itself when the file is missing. */}
-      <img
-        src={project.image}
-        alt={`${project.title} project preview`}
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-        }}
-        className="absolute inset-0 z-[1] h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-      />
-
-      {/* Image overlay and category */}
-      <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-[#170b07]/70 via-transparent to-transparent" />
-
+    
       
     </div>
   );

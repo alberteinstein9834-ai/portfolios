@@ -1,5 +1,5 @@
 import { ArrowDown, Download, Code2 } from "lucide-react";
-import shawaizImage from "../assets/images/shahwaiz.png";
+import shawaizImage from "../assets/images/shahwaiz.webp";
 import resume from "../assets/shaz.pdf";
 
 const stats = [
@@ -171,7 +171,7 @@ export default function Hero() {
           <div className="relative h-full w-full overflow-hidden rounded-xl bg-[#261913]">
             {/* Fallback background shows if the image path isn't found */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-6xl text-[#c58b62]/50">SK</span>
+              <span className="text-6xl text-[#c58b62]/50">S</span>
             </div>
 
             <img
